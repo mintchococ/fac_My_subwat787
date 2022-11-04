@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/rectangle_1.1"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@drawable/rectangle_round"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="33dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="center"
+            android:text="복지철"
+            android:textColor="@color/black"
+            android:textSize="47sp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/rectangle_1.2"
+        android:layout_width="346dp"
+        android:layout_height="414dp"
+        android:background="@drawable/rectangle_round"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+
+    <Button
+        android:id="@+id/button1.1"
+        android:layout_width="145dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_round"
+        android:text="역정보"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <Button
+        android:id="@+id/button1.2"
+        android:layout_width="145dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_round"
+        android:text="길찾기"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <Button
+        android:id="@+id/button1.3"
+        android:layout_width="180dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_round"
+        android:text="하차 전 알림"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="729dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
