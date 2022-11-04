@@ -7,30 +7,33 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class RouteActivity extends AppCompatActivity {
 
-    private Button btn_path_finding;
-    private Button btn_alarm;
+    private Button btn_search;
+    private Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_route);
 
-        btn_path_finding = findViewById(R.id.btn_path_finding);
-        btn_path_finding.setOnClickListener(new View.OnClickListener() {
+        btn_search = findViewById(R.id.btn_search);
+
+        btn_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RouteActivity.class);
+                Intent intent = new Intent(RouteActivity.this, Route2Activity.class);
                 startActivity(intent);
+
             }
         });
 
-        btn_alarm = findViewById(R.id.btn_alarm);
-        btn_alarm.setOnClickListener(new View.OnClickListener() {
+        btn_back = findViewById(R.id.btn_back);
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
+                Intent intent = new Intent(RouteActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

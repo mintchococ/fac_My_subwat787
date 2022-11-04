@@ -16,7 +16,6 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="33dp">
 
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
